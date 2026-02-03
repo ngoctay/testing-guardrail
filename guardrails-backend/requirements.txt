@@ -1,0 +1,36 @@
+# FastAPI and ASGI
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+
+# Database
+sqlalchemy[asyncio]==2.0.36
+asyncpg==0.30.0
+alembic==1.14.0
+
+# Pydantic
+pydantic==2.10.4
+pydantic-settings==2.7.1
+
+# HTTP Client
+httpx==0.28.1
+
+# Security
+cryptography==44.0.0
+python-jose[cryptography]==3.3.0
+
+# Utilities
+python-multipart==0.0.20
+python-dotenv==1.0.1
+
+# Testing
+pytest==8.3.4
+pytest-asyncio==0.25.2
+pytest-cov==6.0.0
+aiosqlite==0.20.0
+httpx==0.28.1
+
+# Code Quality
+black==24.10.0
+isort==5.13.2
+mypy==1.14.1
+ruff==0.8.6

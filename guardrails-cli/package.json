@@ -1,0 +1,48 @@
+{
+  "name": "@enterprise/guardrails-cli",
+  "version": "1.0.0",
+  "description": "Pre-commit CLI for AI Powered Enterprise Guardrails",
+  "main": "dist/index.js",
+  "type": "module",
+  "bin": {
+    "guardrails": "./bin/guardrails.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "lint": "eslint src --ext .ts",
+    "test": "vitest run",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "chalk": "5.3.0",
+    "commander": "12.1.0",
+    "ora": "8.1.1",
+    "yaml": "2.6.1"
+  },
+  "devDependencies": {
+    "@types/node": "22.10.5",
+    "typescript": "5.7.2",
+    "vitest": "2.1.8"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "dist",
+    "bin",
+    "templates"
+  ],
+  "keywords": [
+    "guardrails",
+    "security",
+    "pre-commit",
+    "code-review",
+    "github-copilot"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-org/guardrails-cli.git"
+  },
+  "license": "MIT"
+}
